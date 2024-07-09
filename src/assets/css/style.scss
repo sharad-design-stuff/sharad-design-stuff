@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body {
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    // font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.dark {
+    body {
+        background-color: #162118;
+
+        .cstm_shadow_dark {
+            box-shadow: none;
+        }
+
+        .ant-drawer-content.cstm-drawr {
+            // background-color: #120D29 !important;
+            background-image: linear-gradient(#1C281E, #638E6A);
+        }
+
+        .sml_shadow {
+            box-shadow: 0px 3px 0px 0px #314334;
+        }
+
+        .cstm_shape {
+            background-color: #1B271C;
+        }
+
+        .cstmTab {
+            button {
+                color: #4B6452;
+            }
+        }
+
+        .cstm_shadow {
+            box-shadow: 0px -12px 25px 0px #304b35;
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+}
+
+
+.cstm_shadow {
+    box-shadow: 0px -12px 25px 0px #ddd;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cstm_shadow_dark {
+    box-shadow: 0px -3px 0px 0px #162118;
+}
+
+.bottomNav {
+    li {
+        color: #4B6452;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+
+        }
+    }
+
+    li.active {
+        // background-color: #370626;
+        color: #19FE62;
+        border-bottom: solid 2px #19FE62;
+    }
+}
+
+.dark {
+    .cstmTab {
+        background-color: #111;
+        padding-bottom: 15px;
+
+        button {
+            color: #98A8B0;
+            font-size: 13px;
+            // border-radius: 30px;
+            min-height: 45px;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border: none;
+            }
+        }
+
+        button[aria-selected='true'] {
+            // background-color: #370626;
+            color: #19FE62;
+            border-bottom: solid 2px #19FE62;
+        }
+    }
+}
+
+.cstmTab {
+    background-color: #E8E8E8;
+    padding-bottom: 15px;
+
+    button {
+        color: #333;
+        font-size: 13px;
+        // border-radius: 30px;
+        min-height: 45px;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+    button[aria-selected='true'] {
+        // background-color: #370626;
+        color: #19FE62;
+        border-bottom: solid 2px #19FE62;
+    }
+}
+
+.turbo_mode[aria-checked='true'] {
+    background: #23FD60;
+
+    &:hover {
+        background: #23FD60 !important;
+    }
+
+    &:focus {
+        background: #23FD60;
+    }
+}
+
+.turbo_mode[aria-checked='false'] {
+    background: #E2E8F0;
+
+    &:hover {
+        background: #E2E8F0;
+    }
+
+    &:focus {
+        background: #E2E8F0;
+    }
+}
+
+.bg_blur {
+    filter: blur(65px);
+    top: 20%;
+    left: 28%;
+}
+
+.ant-drawer-content.cstm-drawr {
+    // background-color: #120D29 !important;
+    // background-image: linear-gradient(#1C281E, #638E6A);
+    background-image: linear-gradient(#fff, #fff);
+
+    overflow: hidden;
+    width: 95%;
+    margin: 0px auto;
+    border-radius: 15px;
+    // box-shadow: 0px -3px 0px 0px #CE9811;
+    border: solid 1px #36FD5D;
+
+    .ant-drawer {
+        .ant-drawer-content-wrapper {
+            margin: 15px;
+        }
+    }
+
+    .ant-drawer-body {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+
+    }
+
+    .ant-drawer-header {
+        display: none;
+    }
+}
+
+.ant-drawer-content-wrapper {
+    box-shadow: 0px -1px 40px 10px #CE9811;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cstm_shape {
+    background-color: #E4E4E4;
+    position: absolute;
+    top: -35%;
+    width: 150%;
+    height: 300px;
+    display: flex;
+    border-radius: 100%;
+    z-index: 1;
+    left: -25%;
+}
